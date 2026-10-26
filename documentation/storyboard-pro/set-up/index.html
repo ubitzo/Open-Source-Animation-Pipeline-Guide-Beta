@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        3D Scene Set Up - [Company Name]
+    </title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="3D Scene Set Up"/>
+    <link rel="icon" type="image/svg+xml" href="https://github.com"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://github.com">    
+        
+    <meta property="og:image" content="https://github.com"/>
+    <meta property="og:url" content="https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/set-up/">
+    <meta property="og:title" content="3D Scene Set Up - [Company Name]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="3D Scene Set Up"/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:title" content="3D Scene Set Up - [Company Name]" />
+    <meta name="twitter:description" content="3D Scene Set Up" />
+    <meta name="twitter:image" content="https://github.com"/>
+
+    <link rel="canonical" href="https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/set-up/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&subset=latin&display=swap"
+          rel="stylesheet"/>
+    
+    <link rel="preload" href="https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_lib/index.css" as="style">
+    <link rel="stylesheet" href="https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_lib/index.css"/>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+        html {
+            scroll-padding-top: 120px;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        function getInitialTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        const theme = getInitialTheme();
+        document.documentElement.classList.add('theme-' + theme);
+    </script>
+    
+</head>
+<body>
+
+<div id="root">
+    <sl-drawer id="menu-drawer" label="Documentation" class="drawer__control" placement="top">
+        <div class="body__drawer">
+            <div class="items">
+                
+                    
+                        <sl-button 
+                            class="nav_button  current " 
+                            size="medium" 
+                            href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/"
+                        >
+                            Documentation
+                        </sl-button>
+                         
+                
+            </div>
+            <sl-divider class="divider__drawer"></sl-divider>
+            <nav class="tree">
+                <div class="scroll-panel">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="HGqJZVtET0LhaxWUFtirt" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/">Introduction</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="Ihec0GKbA7LYf6rb8YpdQ" 
+                                                style="--indent-level: 0"
+                                                class="folder"
+                                            >
+                                                <span>Storyboard Pro</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="sooU3Uufca3o-dMUdNCiL" 
+                                            style="--indent-level: 1"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/set-up/">3D Scene Set Up</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="YlFHJCwKvTwSgiah75qts" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/scene-building/">Scene Building </a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="f3BBfuAKEfOdl5zpmnffB" 
+                                                style="--indent-level: 0"
+                                                class="folder"
+                                            >
+                                                <span>Blender </span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="cPmfeb7IgWdfhXnmz6N7_" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/setup/">Setup </a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="IIyz2Sf1qCPZRn_BiWUHf" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/texture-paint/">Texture Paint</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="b9s5nkKT3Vq42b3o5L9FM" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/stylized-lighting/">Stylized Lighting </a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="3fckLqS2lNy4tz7ggqBQ4" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/brushstroke-setuo/">Brushstroke Tools</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </div>
+            </nav>
+        </div>
+    </sl-drawer>
+
+    <div class="body__wrapper">
+        <div class="nav__container">
+            <nav>
+                <div class="border-box"></div>
+                <div class="logo">
+                    
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg>
+
+                        </div>
+                    
+                    <div>
+                        
+                            <span class="line-clamp-1">[Company Name]</span>
+                        
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        
+                            
+                                <sl-button 
+                                    class="nav_button  current " 
+                                    size="medium" 
+                                    href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/"
+                                >
+                                    Documentation
+                                </sl-button>
+                                                    
+                        
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <sl-button id="search-button" class="search_button">
+                            <sl-icon slot="prefix" name="search"></sl-icon>
+                            Search
+                            <div slot="suffix">
+                                <div class="button__prefix-wrapper">
+                                    <div class="button__prefix-container">
+                                        <sl-icon name="command"></sl-icon>
+                                        <span class="font-w-semibold">K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </sl-button>
+                    </div>
+                    <div>
+                        <sl-dropdown id="theme-selector" hoist>
+                            <sl-button slot="trigger" class="nav_button">
+                                <sl-icon id="theme-selector-icon" slot="prefix" name="sun"></sl-icon>
+                            </sl-button>
+                            <sl-menu id="theme-selector-menu">
+                                <sl-menu-item type="checkbox" value="light">Light</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="dark">Dark</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="system">System</sl-menu-item>
+                            </sl-menu>
+                        </sl-dropdown>
+                    </div>
+                    <div class="menu">
+                        <sl-button id="menu-open-trigger" class="nav_button" outline>
+                            <sl-icon slot="prefix" name="list"></sl-icon>
+                        </sl-button>
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        <div class="content__container">
+            <aside class="tree">
+                <nav id="nav-tree" class="tree">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="HGqJZVtET0LhaxWUFtirt" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/">Introduction</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="Ihec0GKbA7LYf6rb8YpdQ" 
+                                                style="--indent-level: 0"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Storyboard Pro</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="sooU3Uufca3o-dMUdNCiL" 
+                                            style="--indent-level: 1"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/set-up/">3D Scene Set Up</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="YlFHJCwKvTwSgiah75qts" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/scene-building/">Scene Building </a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="f3BBfuAKEfOdl5zpmnffB" 
+                                                style="--indent-level: 0"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Blender </span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="cPmfeb7IgWdfhXnmz6N7_" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/setup/">Setup </a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="IIyz2Sf1qCPZRn_BiWUHf" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/texture-paint/">Texture Paint</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="b9s5nkKT3Vq42b3o5L9FM" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/stylized-lighting/">Stylized Lighting </a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="3fckLqS2lNy4tz7ggqBQ4" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/blender/brushstroke-setuo/">Brushstroke Tools</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </nav>
+                <nav id="white-label-container" class="menu">
+                    <a class="white-label" href="https://tiledocs.com" target="_blank">
+                        <div class="card-container">
+                            <div class="icon-section">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="title-section">
+                                <sl-tooltip hoist style="--max-width: 30ch;" placement="top-start" content="This documentation site was created using TileDocs, a fast and user-friendly editor for building and hosting documentation projects.">
+                                    <span>Made with TileDocs</span>
+                                <sl-tooltip>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </aside>
+            
+            <article>
+                <main>
+                    <div class="content">
+                        <h1 id="set-up" dir="ltr"><span style="white-space: pre-wrap;">Set Up</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">Here is a basic set up of Storyboard Pro. It has an infinite canvas which helps with planning camera moves. For this we will be focusing on how to draw in 3D for this scene.</span></p><div class="image-box-wrapper centered"><div class="image-box" style="width: 100%;"><img src="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_images/Screenshot 2026-04-06 at 3.06.44 PM.png" style="width: 100%; border-radius: var(--sl-border-radius-small); border: 1px solid var(--sl-color-neutral-300);"></div></div><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-slate-50); border: 1px solid var(--sl-color-slate-200);"><div class="callout-box-icon"><sl-icon name="exclamation-circle" style="color: var(--sl-color-slate-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-slate-600);"><p dir="ltr"><b><strong style="white-space: pre-wrap;">Note: Storyboard Pro 3D workflow/load</strong></b></p><p dir="ltr"><span style="white-space: pre-wrap;">A file can become really heavy if you have a lot of drawn 3D layers. If you have a 3D model you can use for your scene this will probably much lighter on the program.(I have not tried inserting 3D models directly into Storyboard Pro yet and the guide will be updated when it is) It is based on if you want to mock up or 3D or 2D first. </span></p></div></div></div><p dir="ltr"><span style="white-space: pre-wrap;">First set up the windows that will be needed for a 3D scene:</span></p><ul><li value="1"><span style="white-space: pre-wrap;">Timeline </span></li><li value="2"><span style="white-space: pre-wrap;">Camera View</span></li><li value="3"><span style="white-space: pre-wrap;">Stage View</span></li><li value="4"><span style="white-space: pre-wrap;">Top view</span></li><li value="5"><span style="white-space: pre-wrap;">Side View </span></li></ul><p dir="ltr"><span style="white-space: pre-wrap;">These can all be found in the window option or in the plus section of some of the windows already open.</span></p><div class="image-box-wrapper centered"><div class="image-box" style="width: 100%;"><img src="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_images/SBProwindowoptions.gif" style="width: 100%; border-radius: var(--sl-border-radius-small); border: 1px solid var(--sl-color-neutral-300);"></div></div><p dir="ltr"><span style="white-space: pre-wrap;">Next to turn the storyboard scene in to 3D, press this button in the top bar:</span></p><div class="image-box-wrapper centered"><div class="image-box" style="width: 100%;"><img src="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_images/Screenshot 2026-04-06 at 3.29.54 PM.png" style="width: 100%; border-radius: var(--sl-border-radius-small); border: 1px solid var(--sl-color-neutral-300);"></div></div><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-slate-50); border: 1px solid var(--sl-color-slate-200);"><div class="callout-box-icon"><sl-icon name="exclamation-circle" style="color: var(--sl-color-slate-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-slate-600);"><p dir="ltr"><b><strong style="white-space: pre-wrap;">Note</strong></b></p><p dir="ltr"><span style="white-space: pre-wrap;">If you don't see the 3D icon, press the arrows which will expand all setting at the top. If the 3D is grayed out this means your scene is already in 3D</span></p></div></div></div><p dir="ltr"><span style="white-space: pre-wrap;">When enabled, toggling to </span><b><strong class="text-bold" style="white-space: pre-wrap;">Stage View</strong></b><span style="white-space: pre-wrap;"> shows your drawings in a 3d space. Every layer in Storyboard Pro sits flat in 3D space. You can hold </span><b><strong class="text-bold" style="white-space: pre-wrap;">[space] </strong></b><span style="white-space: pre-wrap;">to pan around in Stage view and holding </span><b><strong class="text-bold" style="white-space: pre-wrap;">[Cmd/Ctrl +Shift] </strong></b><span style="white-space: pre-wrap;">lets you orbit around a 3D scene. Clicking and holding the hand tool on the side also allows you to switch between the two</span></p><div class="image-box-wrapper centered"><div class="image-box" style="width: 100%;"><img src="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_images/SBPro3dcamnavigation.gif" style="width: 100%; border-radius: var(--sl-border-radius-small); border: 1px solid var(--sl-color-neutral-300);"></div></div><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-teal-50); border: 1px solid var(--sl-color-teal-200);"><div class="callout-box-icon"><sl-icon name="lightbulb" style="color: var(--sl-color-teal-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-teal-600);"><p dir="ltr"><b><strong style="white-space: pre-wrap;">Tip</strong></b></p><p dir="ltr"><span style="white-space: pre-wrap;">The zoom tool is also available in the drop down as well. It is a good idea to map it to a key command (i.e 1 and 2 for zooming in and out)</span></p></div></div></div>
+                    </div>
+                </main>
+                <div class="footer">
+                    <div class="content">
+                        <div class="date">
+                            <div>Apr 7, 2026</div>
+                        </div>
+                        
+                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/" class="column left-column" title="Introduction">
+                                <div class="icon">
+                                    <sl-icon name="chevron-left"></sl-icon>
+                                </div>
+                                <div class="label">
+                                    <div class="title">PREVIOUS</div>
+                                    <div class="line-clamp-2">
+                                        Introduction
+                                    </div>
+                                </div>
+                            </a>
+                        
+                        
+                            <a href="/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/documentation/storyboard-pro/scene-building/" class="column right-column" title="Scene Building ">
+                                <div class="label">
+                                    <div class="title">NEXT</div>
+                                    <div class="line-clamp-2">
+                                        Scene Building 
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <sl-icon name="chevron-right"></sl-icon>
+                                </div>
+                            </a>
+                        
+                    </div>
+                </div>
+            </article>
+            <aside class="toc">
+                <nav class="toc">
+                    
+                </nav>
+            </aside>
+        </div>
+        <footer>
+            <div class="stack__column stack__gap-4 stack__center">
+                
+                <div class="stack__row stack__center">
+                    <span><span>Year &copy; Company Name</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<sl-dialog id="search-dialog" class="dialog_control dialog__search">
+    <div slot="label">
+        <p>Search</p>
+    </div>
+    <div class="pane stack__column stack__gap-4">
+        <div>
+            <sl-input
+                id="search-input"
+                type="text"
+                size="small"
+                autocomplete="off"
+                autofocus
+                clearable
+                placeholder="Type text you want to search..."
+            >
+            </sl-input>
+        </div>
+        <div id="search-result" class="stack__column stack__gap-4 search-result">
+        </div>
+        <div id="search-footer" class="footer"></div>
+    </div>
+</sl-dialog>
+<script type="module" src="https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_lib/index.js" data-shoelace="https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_lib"></script>
+<script type="module">
+    import {initPage, initTheme, initSearch, initToc} from 'https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_lib/init.js';
+    import {preInitTree} from 'https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/_lib/pre.js';
+    preInitTree();
+    await initPage();
+    await initTheme('dark');
+    await initSearch('https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta', '1792994252384');
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    initToc();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://github.com/ubitzo/Open-Source-Animation-Pipeline-Guide-Beta/sitemap_index.xml
